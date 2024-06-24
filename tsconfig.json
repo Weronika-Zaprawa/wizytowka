@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*", "*.tsx", "*.ts"]
+    },
     "target": "es5",
     "lib": [
       "dom",
