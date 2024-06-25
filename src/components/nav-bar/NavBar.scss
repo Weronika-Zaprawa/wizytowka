@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px 64px;
+  .name-container {
+    .logo-container {
+      display: flex;
+      gap: 10px;
+      img {
+        width: 5%;
+      }
+      .name {
+        font-weight: 700;
+        font-size: 18px;
+        font-family: Poppins, sans-serif;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    .link {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: rgb(170, 166, 195);
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
