@@ -1,9 +1,12 @@
+import ComputersCanvas from 'components/model3d/ComputerModel';
 import './HeroSection.scss';
 
 function HeroSection() {
   return (
-    <div>
-      <div>
+    <div className="hero-container">
+      <div className="wave" />
+      <div style={{ height: '500px' }}>
+        <ComputersCanvas />
         <div />
       </div>
     </div>

@@ -1,0 +1,17 @@
+.hero-container {
+  //z-index: -1;
+  background-color: #050816;
+  overflow: hidden;
+
+  .wave {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/images/606b2f22095e765d2312a493_BNI-Waves-1.svg');
+    ///background-position: center;
+    //background-repeat: no-repeat;
+    background-size: cover;
+    //z-index: 1;
+    opacity: 0.4;
+    position: absolute;
+  }
+}
