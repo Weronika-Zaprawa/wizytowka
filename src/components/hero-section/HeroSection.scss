@@ -1,17 +1,63 @@
 .hero-container {
-  //z-index: -1;
   background-color: #050816;
   overflow: hidden;
 
   .wave {
     width: 100%;
     height: 100%;
-    background-image: url('../../../public/images/606b2f22095e765d2312a493_BNI-Waves-1.svg');
-    ///background-position: center;
-    //background-repeat: no-repeat;
+    background-image: url('../../../public/images/tlo.png');
     background-size: cover;
-    //z-index: 1;
-    opacity: 0.4;
+    opacity: 0.7;
     position: absolute;
+    margin: 0px;
+  }
+  .introduction-container {
+    padding-left: 100px;
+    padding-top: 50px;
+    display: flex;
+    position: absolute;
+
+    .strip-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+
+      .ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #9153ff;
+      }
+      .strip {
+        width: 4px;
+        height: 400px;
+        background: linear-gradient(180deg, #9153ff, #6e48aa 50%, transparent);
+      }
+    }
+
+    .description-container {
+      font-family: Poppins, sans-serif;
+      color: white;
+
+      .name-container {
+        font-size: 70px;
+        font-weight: 800;
+        span {
+          color: #9153ff;
+        }
+      }
+      .self-introduction {
+        font-size: 40px;
+      }
+    }
+  }
+  .computer {
+    display: flex;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 700px;
   }
 }

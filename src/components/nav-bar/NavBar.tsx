@@ -1,12 +1,13 @@
 import './NavBar.scss';
-import logoW from '../../assets/images/logoW.png';
+
+import logo from '../../assets/images/logo3.png';
 
 function NavBar() {
   return (
     <div className="nav">
       <div className="name-container">
         <div className="logo-container">
-          <img src={logoW} alt="logo" />
+          <img src={logo} alt="logo" />
           <div className="name">
             Weronika Zaprawa | Junior Frontend Developer
           </div>
