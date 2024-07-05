@@ -1,3 +1,4 @@
+import InteractiveCard from './InteractiveCard';
 import './OverviewSection.scss';
 
 function OverviewSection() {
@@ -17,20 +18,20 @@ function OverviewSection() {
         </p>
       </div>
       <div className="tech-cards">
-        <div className="card">Java Script</div>
-        <div className="card">Type Script</div>
-        <div className="card">React</div>
-        <div className="card">HTML</div>
-        <div className="card">CSS</div>
-        <div className="card">SCSS</div>
-        <div className="card">Rest API</div>
-        <div className="card">Bootstrap</div>
-        <div className="card">Leaflet</div>
-        <div className="card">Formik</div>
-        <div className="card">Yup</div>
-        <div className="card">Figma</div>
-        <div className="card">Github</div>
-        <div className="card">Jest</div>
+        <InteractiveCard icon="" index={0} title="JavaScript" />
+        <InteractiveCard icon="" index={1} title="Type Script" />
+        <InteractiveCard icon="" index={2} title="React" />
+        <InteractiveCard icon="" index={3} title="HTML" />
+        <InteractiveCard icon="" index={4} title="CSS" />
+        <InteractiveCard icon="" index={5} title="SCSS" />
+        <InteractiveCard icon="" index={6} title="Rest API" />
+        <InteractiveCard icon="" index={7} title="Bootstrap" />
+        <InteractiveCard icon="" index={8} title="Leaflet" />
+        <InteractiveCard icon="" index={9} title="Formik" />
+        <InteractiveCard icon="" index={10} title="Yup" />
+        <InteractiveCard icon="" index={11} title="Figma" />
+        <InteractiveCard icon="" index={12} title="Github" />
+        <InteractiveCard icon="" index={13} title="Jest" />
       </div>
     </div>
   );

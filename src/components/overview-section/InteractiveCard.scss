@@ -1,0 +1,40 @@
+.tilt {
+  font-family: Poppins, sans-serif;
+  background-color: rgb(21 16 48);
+  flex: 1 0 12%; /* 100% / 7 = 14.28% */
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  .motion-div {
+    border-radius: 20px;
+    //background: linear-gradient(90deg, #00ff00, #ff00ff);
+    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    width: 100%;
+    padding: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    div {
+      //   //background: -webkit-linear-gradient(
+      //     -90.13deg,
+      //     #00cea8 1.9%,
+      //     #bf61ff 97.5%
+      //   );
+      background-color: rgb(21 16 48);
+
+      //background-color: #f0f0f0; // Tailwind bg-tertiary
+      border-radius: 20px; // Tailwind rounded-[20px]
+      //padding-top: 1.25rem; // Tailwind py-5 (5 * 0.25rem)
+      //padding-bottom: 1.25rem; // Tailwind py-5 (5 * 0.25rem)
+      //padding-left: 3rem; // Tailwind px-12 (12 * 0.25rem)
+      //padding-right: 3rem; // Tailwind px-12 (12 * 0.25rem)
+      //min-height: 280px; // Tailwind min-h-[280px]
+      display: flex; // Tailwind flex
+      //flex-direction: row;
+      //justify-content: space-evenly; // Tailwind justify-evenly
+      //align-items: center; // Tailwind items-center
+      flex-direction: column;
+    }
+  }
+}
