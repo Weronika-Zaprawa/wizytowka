@@ -18,26 +18,9 @@ function InteractiveCard({
         variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
         className="motion-div"
       >
-        <div
-        // options={{
-        //   max: 45,
-        //   scale: 1,
-        //   speed: 300,
-        // }}
-        >
-          {icon && (
-            <img
-              src={icon}
-              alt="web-development"
-              // className="w-16 h-16 object-contain"
-            />
-          )}
-
-          <h3
-          // className="text-white text-[20px] font-bold text-center"
-          >
-            {title}
-          </h3>
+        <div>
+          {icon && <img src={icon} alt="web-development" />}
+          <h3>{title}</h3>
         </div>
       </motion.div>
     </Tilt>

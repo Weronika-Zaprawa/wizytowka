@@ -1,5 +1,4 @@
 import './NavBar.scss';
-
 import logo from '../../assets/images/logo3.png';
 
 function NavBar() {
