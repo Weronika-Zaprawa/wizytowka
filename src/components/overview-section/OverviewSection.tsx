@@ -45,20 +45,20 @@ function OverviewSection() {
         </p>
       </motion.div>
       <div className="tech-cards">
-        <InteractiveCard icon={js} index={0} title="JavaScript" />
-        <InteractiveCard icon={ts} index={1} title="Type Script" />
-        <InteractiveCard icon={react} index={2} title="React" />
-        <InteractiveCard icon={html} index={3} title="HTML" />
-        <InteractiveCard icon={css} index={4} title="CSS" />
-        <InteractiveCard icon={scss} index={5} title="SCSS" />
-        <InteractiveCard icon={api} index={6} title="Rest API" />
-        <InteractiveCard icon={bootstrap} index={7} title="Bootstrap" />
-        <InteractiveCard icon={leaflet} index={8} title="Leaflet" />
-        <InteractiveCard icon={formik} index={9} title="Formik" />
-        <InteractiveCard icon={yup} index={10} title="Yup" />
-        <InteractiveCard icon={figma} index={11} title="Figma" />
-        <InteractiveCard icon={github} index={12} title="Github" />
-        <InteractiveCard icon={jest} index={13} title="Jest" />
+        <InteractiveCard icon={js} index={2} title="JavaScript" />
+        <InteractiveCard icon={ts} index={3.5} title="Type Script" />
+        <InteractiveCard icon={react} index={4.9} title="React" />
+        <InteractiveCard icon={html} index={6.2} title="HTML" />
+        <InteractiveCard icon={css} index={7.4} title="CSS" />
+        <InteractiveCard icon={scss} index={8.5} title="SCSS" />
+        <InteractiveCard icon={api} index={9.5} title="Rest API" />
+        <InteractiveCard icon={bootstrap} index={10.4} title="Bootstrap" />
+        <InteractiveCard icon={leaflet} index={11.2} title="Leaflet" />
+        <InteractiveCard icon={formik} index={11.9} title="Formik" />
+        <InteractiveCard icon={yup} index={12.5} title="Yup" />
+        <InteractiveCard icon={figma} index={13} title="Figma" />
+        <InteractiveCard icon={github} index={13.4} title="Github" />
+        <InteractiveCard icon={jest} index={13.7} title="Jest" />
       </div>
     </div>
   );

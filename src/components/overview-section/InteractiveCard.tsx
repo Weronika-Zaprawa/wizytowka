@@ -12,10 +12,18 @@ function InteractiveCard({
   title: string;
   icon: string;
 }) {
+  const { initial, viewport, whileInView } = fadeIn(
+    'right',
+    'spring',
+    index * 0.5,
+    0.75,
+  );
   return (
     <Tilt className="tilt">
       <motion.div
-        variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+        initial={initial}
+        viewport={viewport}
+        whileInView={whileInView}
         className="motion-div"
       >
         <div>

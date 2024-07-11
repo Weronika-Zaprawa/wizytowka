@@ -3,8 +3,11 @@
   padding-left: 100px;
   padding-bottom: 100px;
   padding-top: 50px;
+  z-index: 300;
 
   .introduction {
+    position: sticky;
+    z-index: 300;
     display: flex;
     flex-direction: column;
     //color: white;

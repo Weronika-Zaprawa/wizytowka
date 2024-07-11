@@ -40,12 +40,12 @@ export const fadeIn = (
   delay: number,
   duration: number,
 ) => ({
-  hidden: {
+  initial: {
     x: fadeInChangeDirectionX(direction),
     y: fadeInChangeDirectionY(direction),
     opacity: 0,
   },
-  show: {
+  whileInView: {
     x: 0,
     y: 0,
     opacity: 1,
@@ -56,6 +56,7 @@ export const fadeIn = (
       ease: 'easeOut',
     },
   },
+  viewport: { once: true },
 });
 
 export const zoomIn = (delay: number, duration: number) => ({
