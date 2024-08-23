@@ -1,10 +1,9 @@
 import './EducationSection.scss';
-// import underconstruction from '../../assets/images/underconstruction.gif';
+import underconstruction from '../../assets/images/underconstruction.gif';
 
 function EducationSection() {
   return (
     <div className="education-modal">
-      {/* <img src={underconstruction} alt="underconstruction" /> */}
       <div className="header">
         <h4>What I have learned so far</h4>
         <h1>My education</h1>
@@ -105,6 +104,7 @@ function EducationSection() {
           <div className="line" />
         </div> */}
       </div>
+      <img src={underconstruction} alt="underconstruction" />
     </div>
   );
 }
