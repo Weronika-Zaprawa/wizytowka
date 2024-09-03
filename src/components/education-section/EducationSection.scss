@@ -4,7 +4,7 @@
   // background-color: rgb(78, 181, 237);
   width: 100%;
   flex-direction: column;
-  //padding-bottom: 300px;
+  padding-bottom: 300px;
 
   .header {
     color: white;
@@ -36,29 +36,35 @@
   .timeline {
     color: white;
     font-family: Poppins, sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+    //display: flex;
+    //justify-content: center;
+    //flex-direction: column;
+
     .column {
       display: flex;
-      flex-direction: row;
+      //flex-direction: row;
       justify-content: center;
-      gap: 20px;
-      .row-left {
+      gap: 55px;
+      //margin-bottom: 50px;
+
+      .row {
         display: flex;
         flex-direction: column;
         padding: 25px;
         background-color: rgb(21 16 48);
         width: 400px;
-        height: 100%;
+        height: fit-content;
         gap: 10px;
         border-bottom: solid 2px white;
-        border-radius: 10px;
+        border-radius: 12px;
 
         .education-tile {
           font-size: 20px;
           font-weight: 700;
+        }
+        .subtitle {
+          color: rgb(170 166 195);
+          font-size: 15px;
         }
         ul {
           line-height: 23px;
@@ -68,29 +74,32 @@
           }
         }
       }
-      .row-right {
+      .circle {
+        margin-top: 20px;
         display: flex;
-        flex-direction: column;
-        padding: 25px;
-        background-color: rgb(21 16 48);
-        width: 400px;
-        height: 50px;
-        gap: 10px;
-        border-bottom: solid 2px white;
-        border-radius: 10px;
-
-        .education-tile {
-          font-size: 20px;
-          font-weight: 700;
+        position: absolute;
+        border: solid 2px white;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        background: white;
+        justify-content: center;
+        //align-items: center;
+        padding: 3px;
+        img {
+          width: 100%;
+          object-fit: contain;
         }
-        .subtitle {
-          font-size: 15px;
-        }
+      }
+      .line {
+        width: 1px;
+        background: white;
+        border: solid 2px white;
       }
       .spreader {
         padding: 25px;
         width: 400px;
-        height: 50px;
+        //height: 50px;
         color: #050816;
       }
     }

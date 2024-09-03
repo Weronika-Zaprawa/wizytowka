@@ -1,5 +1,8 @@
 import './EducationSection.scss';
-import underconstruction from '../../assets/images/underconstruction.gif';
+// import underconstruction from '../../assets/images/underconstruction.gif';
+import umcs from '../../assets/images/umcs.png';
+import meta from '../../assets/images/meta.png';
+import ibm from '../../assets/images/IBM.png';
 
 function EducationSection() {
   return (
@@ -10,34 +13,39 @@ function EducationSection() {
       </div>
       <div className="timeline">
         <div className="column">
-          <div className="row-left">
+          <div className="row">
             <div className="education-tile">
               GEOINFORMATICS - Master&apos;s degree
             </div>
             <div className="subtitle">Maria Curie-Skłodowska University</div>
           </div>
+          <div className="circle">
+            <img src={umcs} alt="UMCS logo" />
+          </div>
+          <div className="line" />
           <div className="spreader">
             <div className="education-tile">.</div>
             <div className="subtitle">.</div>
           </div>
         </div>
-        {/* <div className="line">
-          <div className="circle"> hbhh</div>
-        </div> */}
+
         <div className="column">
           <div className="spreader">
             <div className="education-tile">.</div>
             <div className="subtitle">.</div>
           </div>
-          <div className="row-right">
+
+          <div className="line" />
+          <div className="row">
             <div className="education-tile">
               GEOINFORMATICS - Bachelor&apos;s degree
             </div>
             <div className="subtitle">Maria Curie-Skłodowska University</div>
           </div>
         </div>
+
         <div className="column">
-          <div className="row-left">
+          <div className="row">
             <div className="education-tile">
               Meta Front-End Developer Professional Certificate
             </div>
@@ -61,20 +69,30 @@ function EducationSection() {
               </li>
             </ul>
           </div>
+          <div className="circle">
+            <img src={meta} alt="UMCS logo" />
+          </div>
+          <div className="line" />
           <div className="spreader">
             <div className="education-tile">.</div>
             <div className="subtitle">.</div>
           </div>
         </div>
+
         <div className="column">
           <div className="spreader">
             <div className="education-tile">.</div>
             <div className="subtitle">.</div>
           </div>
-          <div className="row-left">
+          <div className="circle">
+            <img src={ibm} alt="UMCS logo" />
+          </div>
+          <div className="line" />
+          <div className="row">
             <div className="education-tile">
               IBM Front-End Developer Professional Certificate
             </div>
+            <div className="subtitle">During</div>
             <ul>
               <li>
                 Mastering the latest practical skills and tools that front-end
@@ -95,16 +113,8 @@ function EducationSection() {
             </ul>
           </div>
         </div>
-        {/* <div className="row">
-          <div className="education-tile">asdsdsdfsdf</div>
-          <div className="line" />
-        </div>
-        <div className="row">
-          <div className="education-tile">asdsdsdfsdf</div>
-          <div className="line" />
-        </div> */}
       </div>
-      <img src={underconstruction} alt="underconstruction" />
+      {/* <img src={underconstruction} alt="underconstruction" /> */}
     </div>
   );
 }
