@@ -7,10 +7,12 @@ function InteractiveCard({
   index,
   title,
   icon,
+  description,
 }: {
   index: number;
   title: string;
   icon: string;
+  description?: string;
 }) {
   const { initial, viewport, whileInView } = fadeIn(
     'right',
@@ -29,6 +31,7 @@ function InteractiveCard({
         <div>
           {icon && <img src={icon} alt="web-development" />}
           <h3>{title}</h3>
+          {description && <p>{description}</p>}
         </div>
       </motion.div>
     </Tilt>
