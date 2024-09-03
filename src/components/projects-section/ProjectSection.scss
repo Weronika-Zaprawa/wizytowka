@@ -1,9 +1,13 @@
-.overview-container {
-  background-color: #050816;
-  padding-left: 100px;
-  padding-bottom: 100px;
-  padding-top: 50px;
-  z-index: 300;
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4eb5ed;
+  // padding-left: 100px;
+  // padding-bottom: 100px;
+  // padding-top: 50px;
+  // z-index: 300;
+  width: 100%;
 
   .introduction {
     position: sticky;

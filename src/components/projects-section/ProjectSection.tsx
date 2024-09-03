@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion';
-import InteractiveCard from '../overview-section/InteractiveCard';
+// import { motion } from 'framer-motion';
+// import InteractiveCard from '../overview-section/InteractiveCard';
 import './ProjectSection.scss';
+// import wolm from '../../assets/images/wolm.png';
+// import lemon from '../../assets/images/lemon.png';
+// import calendar from '../../assets/images/calendar.png';
+import underconstruction from '../../assets/images/underconstruction.gif';
 
-import wolm from '../../assets/images/wolm.png';
-import lemon from '../../assets/images/lemon.png';
-import calendar from '../../assets/images/calendar.png';
-
-function OverviewSection() {
+function ProjectSection() {
   return (
-    <div className="overview-container">
-      <motion.div
+    <div className="project-container">
+      {/* <motion.div
         className="introduction"
         initial={{ y: -50, opacity: 0 }}
         whileInView={{
@@ -49,9 +49,10 @@ validation, API integration, and mobile version support."
 ordering capabilities, mobile version support, and API integration."
         />
         <InteractiveCard icon={calendar} index={4.9} title="Calendar" />
-      </div>
+      </div> */}
+      <img src={underconstruction} alt="underconstruction" />
     </div>
   );
 }
 
-export default OverviewSection;
+export default ProjectSection;
