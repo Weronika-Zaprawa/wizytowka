@@ -29,7 +29,14 @@ function InteractiveCard({
         className="motion-div"
       >
         <div>
-          {icon && <img src={icon} alt="web-development" />}
+          {icon && (
+            <img
+              // eslint-disable-next-line prefer-template
+              className={'normal ' + (description?.length ? ' wide' : '')}
+              src={icon}
+              alt="web-development"
+            />
+          )}
           <h3>{title}</h3>
           {description && <p>{description}</p>}
         </div>
