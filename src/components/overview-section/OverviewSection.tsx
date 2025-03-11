@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
 import InteractiveCard from './InteractiveCard';
 import './OverviewSection.scss';
 import js from '../../assets/images/js.png';
@@ -6,7 +7,6 @@ import ts from '../../assets/images/ts.png';
 import react from '../../assets/images/react.png';
 import html from '../../assets/images/html1.png';
 import css from '../../assets/images/css.png';
-import scss from '../../assets/images/scss.png';
 import api from '../../assets/images/api.png';
 import bootstrap from '../../assets/images/bootstrap.png';
 import leaflet from '../../assets/images/leaflet.png';
@@ -15,6 +15,7 @@ import yup from '../../assets/images/yup.png';
 import figma from '../../assets/images/figma.png';
 import github from '../../assets/images/github.png';
 import jest from '../../assets/images/jest.png';
+import tailwind from '../../assets/images/tailwind.png';
 
 function OverviewSection() {
   return (
@@ -32,7 +33,9 @@ function OverviewSection() {
         }}
         viewport={{ once: true }}
       >
-        <h4>Introduction</h4>
+        <Element name="about">
+          <h4>Introduction</h4>
+        </Element>
         <h1>Technology stack</h1>
         <p>
           I am continually expanding my skills through active participation in
@@ -46,11 +49,11 @@ function OverviewSection() {
       </motion.div>
       <div className="tech-cards">
         <InteractiveCard icon={js} index={2} title="JavaScript" />
-        <InteractiveCard icon={ts} index={3.5} title="Type Script" />
+        <InteractiveCard icon={ts} index={3.5} title="TypeScript" />
         <InteractiveCard icon={react} index={4.9} title="React" />
         <InteractiveCard icon={html} index={6.2} title="HTML" />
-        <InteractiveCard icon={css} index={7.4} title="CSS" />
-        <InteractiveCard icon={scss} index={8.5} title="SCSS" />
+        <InteractiveCard icon={css} index={7.4} title="SCSS" />
+        <InteractiveCard icon={tailwind} index={8.5} title="Tailwind" />
         <InteractiveCard icon={api} index={9.5} title="Rest API" />
         <InteractiveCard icon={bootstrap} index={10.4} title="Bootstrap" />
         <InteractiveCard icon={leaflet} index={11.2} title="Leaflet" />

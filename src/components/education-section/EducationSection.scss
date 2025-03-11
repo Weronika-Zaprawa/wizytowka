@@ -5,13 +5,17 @@
   width: 100%;
   flex-direction: column;
   padding-bottom: 8px;
+  //padding-left: 75px;
+  //padding-right: 100px;
+  z-index: 1;
+  position: relative;
 
   .header {
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    //width: 100%;
     align-items: center;
     margin-bottom: 50px;
 
@@ -46,6 +50,10 @@
       justify-content: center;
       gap: 55px;
       //margin-bottom: 50px;
+
+      @media (max-width: 1050px) {
+        gap: 35px;
+      }
 
       .row {
         display: flex;
@@ -101,6 +109,38 @@
         width: 400px;
         //height: 50px;
         color: #050816;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .education-modal {
+    .header {
+    }
+    .timeline {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        .row {
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+        }
+        .circle {
+          display: none;
+        }
+        .spreader {
+          display: none;
+        }
+        .line {
+          display: none;
+        }
       }
     }
   }

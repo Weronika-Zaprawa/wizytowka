@@ -1,17 +1,16 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-// import { motion } from 'framer-motion';
-// import InteractiveCard from '../overview-section/InteractiveCard';
+import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
+import InteractiveCard from '../overview-section/InteractiveCard';
 import './ProjectSection.scss';
-// import wolm from '../../assets/images/wolm.png';
-// import lemon from '../../assets/images/lemon.png';
-// import calendar from '../../assets/images/calendar.png';
-
-import underconstruction from '../../assets/images/underconstruction.gif';
+import wolm from '../../assets/images/wolm.png';
+import lemon from '../../assets/images/lemon.png';
+import calendar from '../../assets/images/calendar.png';
 
 function ProjectSection() {
   return (
     <div className="project-container">
-      {/* <motion.div
+      <motion.div
         className="introduction"
         initial={{ y: -50, opacity: 0 }}
         whileInView={{
@@ -24,7 +23,9 @@ function ProjectSection() {
         }}
         viewport={{ once: true }}
       >
-        <h4>My Work</h4>
+        <Element name="work">
+          <h4>My Work</h4>
+        </Element>
         <h1>Projects</h1>
         <p>
           These projects demonstrate my skills and experience through real-world
@@ -63,9 +64,7 @@ ordering capabilities, mobile version support, and API integration."
             description="A calendar application that allows users to add, edit, and delete events. It features multiple views, including day, week, and month views. The app supports both Polish and English languages and is integrated with a Firebase database."
           />
         </a>
-      </div> */}
-
-      <img src={underconstruction} alt="underconstruction" />
+      </div>
     </div>
   );
 }
