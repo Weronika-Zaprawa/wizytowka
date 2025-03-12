@@ -28,7 +28,6 @@ function EarthCanvas() {
   return (
     <Canvas
       shadows
-      framework="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
