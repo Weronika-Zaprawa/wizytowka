@@ -63,3 +63,68 @@
     min-height: 700px;
   }
 }
+
+@media (max-width: 800px) {
+  .hero-container {
+    .introduction-container {
+      padding-left: 50px;
+      .strip-container {
+        margin-right: 20px;
+      }
+      .description-container {
+        .name-container {
+          font-size: 60px;
+        }
+        .self-introduction {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .hero-container {
+    .introduction-container {
+      padding-left: 25px;
+      .strip-container {
+        margin-right: 20px;
+
+        .strip {
+          height: 300px;
+        }
+      }
+      .description-container {
+        .name-container {
+          font-size: 55px;
+        }
+        .self-introduction {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-container {
+    .introduction-container {
+      padding-left: 20px;
+      .strip-container {
+        margin-right: 20px;
+
+        .strip {
+          height: 200px;
+        }
+      }
+      .description-container {
+        .name-container {
+          font-size: 45px;
+        }
+        .self-introduction {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

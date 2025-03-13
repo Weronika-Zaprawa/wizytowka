@@ -28,7 +28,7 @@
       font-weight: 800;
     }
     p {
-      width: 60%;
+      width: 70%;
       text-align: justify;
       color: rgb(170 166 195);
       font-size: 17px;
@@ -45,5 +45,48 @@
     gap: 10px;
     z-index: 1;
     position: relative;
+  }
+}
+
+@media (max-width: 800px) {
+  .overview-container {
+    padding-left: 25px;
+    .introduction {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        width: 80%;
+      }
+    }
+    .tech-cards {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .overview-container {
+    .introduction {
+      h1 {
+        font-size: 55px;
+      }
+    }
+    .tech-cards {
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .overview-container {
+    .introduction {
+      h1 {
+        font-size: 45px;
+      }
+    }
+    .tech-cards {
+      font-size: 10px;
+    }
   }
 }
