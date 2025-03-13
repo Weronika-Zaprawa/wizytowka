@@ -5,7 +5,7 @@
   padding: 20px 64px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
 
   .container {
     display: flex;
@@ -30,6 +30,18 @@
         color: white;
         display: flex;
         align-items: center;
+      }
+      .position {
+        font-weight: 700;
+        font-size: 18px;
+        font-family: Poppins, sans-serif;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 650px) {
+          display: none;
+        }
       }
     }
   }

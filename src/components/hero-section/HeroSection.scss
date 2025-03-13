@@ -15,8 +15,10 @@
   .introduction-container {
     padding-left: 100px;
     padding-top: 50px;
+    padding-bottom: 100px;
     display: flex;
     position: absolute;
+    z-index: 100;
 
     .strip-container {
       display: flex;
@@ -58,9 +60,10 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    width: 100%;
+    //width: 100%;
     height: 700px;
-    min-height: 700px;
+    //min-height: 700px;
+    z-index: 0;
   }
 }
 
@@ -126,5 +129,8 @@
         }
       }
     }
+  }
+  .computer {
+    height: 300px;
   }
 }
