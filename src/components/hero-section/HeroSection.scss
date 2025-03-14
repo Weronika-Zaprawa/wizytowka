@@ -15,7 +15,7 @@
   .introduction-container {
     padding-left: 100px;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: flex;
     position: absolute;
     z-index: 100;
@@ -33,6 +33,7 @@
         background-color: #9153ff;
       }
       .strip {
+        position: absolute;
         width: 4px;
         height: 400px;
         background: linear-gradient(180deg, #9153ff, #6e48aa 50%, transparent);
@@ -42,6 +43,7 @@
     .description-container {
       font-family: Poppins, sans-serif;
       color: white;
+      height: min-content;
 
       .name-container {
         font-size: 70px;
@@ -109,7 +111,7 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
   .hero-container {
     .introduction-container {
       padding-left: 20px;
@@ -117,7 +119,7 @@
         margin-right: 20px;
 
         .strip {
-          height: 200px;
+          height: 250px;
         }
       }
       .description-container {

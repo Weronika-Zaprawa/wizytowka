@@ -19,7 +19,7 @@ function fadeInChangeDirectionX(direction: string) {
     return 100;
   }
   if (direction === 'right') {
-    return -100;
+    return -80;
   }
   return 0;
 }
